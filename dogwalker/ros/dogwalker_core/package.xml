@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>dogwalker_core</name>
+  <version>0.1.0</version>
+  <description>The dogwalker core ROS package (skeleton for MVP)</description>
+  <maintainer email="your-team@example.com">Your Team</maintainer>
+  <license>MIT</license>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf</depend>
+</package>

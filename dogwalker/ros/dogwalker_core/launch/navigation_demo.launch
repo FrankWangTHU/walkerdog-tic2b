@@ -1,0 +1,17 @@
+<launch>
+  <!-- Example launch file that would start mapping, localization and move_base -->
+  <!-- These are placeholders; adapt to your ROS setup and robot topics -->
+
+  <!-- Start gmapping for building a map (if using a live lidar) -->
+  <node pkg="gmapping" type="slam_gmapping" name="gmapping" output="screen"/>
+
+  <!-- Start AMCL for localization -->
+  <node pkg="amcl" type="amcl" name="amcl" output="screen"/>
+
+  <!-- Start move_base with your chosen local planner (teb_local_planner recommended) -->
+  <node pkg="move_base" type="move_base" name="move_base" output="screen"/>
+
+  <!-- Start the demo controller and web bridge -->
+  <node pkg="dogwalker_core" type="controller.py" name="dog_controller" output="screen"/> 
+  <node pkg="dogwalker_core" type="web_server.py" name="dog_web" output="screen"/>
+</launch>
