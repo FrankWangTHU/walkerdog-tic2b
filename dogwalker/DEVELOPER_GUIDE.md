@@ -148,3 +148,4 @@ POST http://<jetson-ip>:5000/api/mode  JSON body: {"mode": "boss"}
 - 或者在本机（Windows 环境）帮你实际运行 FastAPI+Streamlit 来验证前端后端交互（我可以生成要执行的 PowerShell 命令）。
 
 你希望我下一步做哪件事？（建议：我可以先把 `README.md` 更新为快速启动指南）
+
